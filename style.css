@@ -1,6 +1,6 @@
 .typo {
   color: #ffffff;
-  font-family: 'Inter', sans-serif, Arial;
+  font-family: "Inter", sans-serif, Arial;
   font-style: normal;
   font-weight: 400;
 }
@@ -14,7 +14,6 @@
 }
 
 .header {
-  min-width: 1184px;
   min-height: 52px;
   display: flex;
   align-content: center;
@@ -23,9 +22,29 @@
   margin: 28px 48px 0;
 }
 
+@media screen and (max-width: 350px) {
+  .header {
+    min-height: 42px;
+    margin: 16px 16px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    margin: 28px 24px 0;
+  }
+}
+
 .header__logo {
   width: 176px;
   height: 52px;
+}
+
+@media screen and (max-width: 350px) {
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
 }
 
 .header__link {
@@ -33,6 +52,12 @@
   gap: 18px;
   margin: 18px 0 6px;
   border: 1px solid red;
+}
+
+@media screen and (max-width: 350px) {
+  .header__link {
+    margin: 14px 0 8px;
+  }
 }
 
 .header__lang-link {
@@ -46,7 +71,16 @@
   border: 1px solid red;
 }
 
-.header__lang-link:active {
+@media screen and (max-width: 350px) {
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 20px;
+    width: 22px;
+    height: 20px;
+  }
+}
+
+.header__lang-link_active {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
@@ -60,6 +94,7 @@
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
+  border: 1px solid rebeccapurple;
 }
 
 .lead {
@@ -68,8 +103,29 @@
   align-items: center;
   flex-direction: column;
   margin: 56px 148px 0;
-  min-width: 984px;
   min-height: 1005px;
+}
+
+@media screen and (max-width: 350px) {
+  .lead {
+    margin: 48px 0 0;
+    min-height: 406px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .lead {
+    margin: 48px 0 0;
+    min-height: 862px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .lead {
+    margin: 48px 48px 0;
+    min-height: 962px;
+  }
 }
 
 .lead__title {
@@ -81,7 +137,28 @@
   line-height: 100px;
   padding: 0;
   text-align: center;
-  ;
+}
+
+@media screen and (max-width: 350px) {
+  .lead__title {
+    margin: 0 14px 0 18px;
+    width: 288px;
+    height: 88px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .lead__title {
+    margin: 0 24px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .lead__title {
+    margin: 0 104px;
+  }
 }
 
 .lead__subtitle {
@@ -94,10 +171,50 @@
   margin: 32px 172px 0;
 }
 
+@media screen and (max-width: 350px) {
+  .lead__subtitle {
+    width: 288px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 16px 14px 0 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .lead__subtitle {
+    margin: 32px 64px 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .lead__subtitle {
+    margin: 32px 144px 0;
+  }
+}
+
 .lead__image {
   object-fit: cover;
   width: 100%;
   margin: 64px 0 0;
+}
+
+@media screen and (max-width: 350px) {
+  .lead__image {
+    margin: 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .lead__image {
+    margin: 56px 0 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .lead__image {
+    margin: 56px 0 0;
+  }
 }
 
 .lead__caption {
@@ -108,7 +225,24 @@
   align-self: flex-start;
   width: 158px;
   height: 14px;
-  ;
+}
+
+@media screen and (max-width: 350px) {
+  .lead__caption {
+    margin: 8px 144px 0 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .lead__caption {
+    margin: 8px 586px 0 24px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .lead__caption {
+    margin: 8px 770px 0 0;
+  }
 }
 
 .intro {
@@ -122,7 +256,7 @@
 }
 
 .intro__title {
-  width: 690px;
+  width: 100%;
   height: 58px;
   border: 1px solid red;
   font-weight: 900;
@@ -174,7 +308,7 @@
   }
 
   .photo-grid__item {
-    width: 300px;
+    max-width: 300px;
     height: 225px;
   }
 }
@@ -200,7 +334,7 @@
     gap: 12px;
     margin-top: 64px;
   }
-  
+
   .photo-grid__item {
     width: 280px;
     height: 216px;
@@ -236,7 +370,7 @@
 }
 
 .place__website__url-heading {
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -244,7 +378,7 @@
 }
 
 .place__website__link {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   line-height: 22px;
 }
@@ -276,7 +410,6 @@
 
 .cover {
   background-image: url(./sprint-3-images/cover-trains.jpg);
-  min-width: 1184px;
   height: 740px;
   background-size: 100%;
   margin: 92px 48px 0;
@@ -289,7 +422,7 @@
   border: 1px solid red;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -322,7 +455,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 1184px;
   max-height: 18px;
   margin: 92px 48px 24px;
   padding: 0;
@@ -343,7 +475,7 @@
   padding: 0;
   font-size: 16px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   border: 1px solid red;
 }
@@ -361,6 +493,3 @@
   line-height: 16px;
   border: 1px solid red;
 }
-
-
-  
