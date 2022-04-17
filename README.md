@@ -10,6 +10,6 @@ _Это проект, в котором рассказавыется о том, 
 
 В дальнейшем в проекте будет разширятся функционар и разнообразие за счет добавление Java Script.
 
-**Git Hub Pages**
+**GitHub Pages**
 
-- [Ссылка на макет в Pages](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
+- [Ссылка на репозиторий в Pages](https://randychebro.github.io/russian-travel/)
