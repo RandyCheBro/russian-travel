@@ -3,19 +3,21 @@
   font-size: 72px;
   line-height: 76px;
   text-align: center;
-  margin: 245px 312px 0;
+  justify-content: center;
+  margin: 245px 0 0;
+  max-width: 560px;
   padding: 0;
 }
 
 @media screen and (max-width: 1050px) {
   .cover__title {
-    margin: 195px 232px 0;
+    margin: 195px 0 0;
   }
 }
 
 @media screen and (max-width: 800px) {
   .cover__title {
-    margin: 115px 104px 0;
+    margin: 115px 0 0;
   }
 }
 
@@ -23,6 +25,7 @@
   .cover__title {
     font-size: 32px;
     line-height: 35px;
-    margin: 33px 16px 0;
+    margin: 33px 0 0;
+    max-width: 288px;
   }
 }
