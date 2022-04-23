@@ -6,6 +6,7 @@
   height: 100%;
   color: #ffffff;
   text-decoration: none;
+  position: relative;
 }
 
 @media screen and (max-width: 1050px) {
@@ -34,7 +35,11 @@
   background-color: #2a2c2f;
   opacity: 0.2;
   z-index: 1;
+  content: '';
+  z-index: -1;
+  transition: 0.3s;
   }
+
   .cover__overlay:hover:before{
   opacity: 0.8;
   }
