@@ -13,11 +13,7 @@
 
 @media screen and (max-width: 800px) {
   .lead {
-    margin: 48px 0 0;
-  }
-}
-@media screen and (max-width: 350px) {
-  .lead {
-    margin: 48px 0 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

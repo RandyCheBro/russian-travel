@@ -1,0 +1,9 @@
+.header__lang-link_active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.header__lang-link:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+}

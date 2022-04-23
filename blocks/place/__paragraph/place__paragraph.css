@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .place__paragraph {
+    margin-left: 16px;
+  }
+}
+
 .place__paragraph:nth-of-type(2) {
   margin-top: 26px;
 }

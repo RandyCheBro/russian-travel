@@ -2,16 +2,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 740px;
   height: 100%;
   color: #ffffff;
   text-decoration: none;
 }
 
-.cover__overlay::before {
-  background: #2A2C2F;
-  opacity: 0.3;
+@media screen and (max-width: 1050px) {
+  .cover__overlay {
+    min-height: 640px;
+  }
 }
 
-.cover__overlay:hover::before {
-  opacity: 0.8;
+@media screen and (max-width: 800px) {
+  .cover__overlay {
+    min-height: 480px;
+  }
 }
+
+@media screen and (max-width: 350px) {
+  .cover__overlay {
+    min-height: 200px;
+  }
+}
+.cover__overlay:before{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: #2a2c2f;
+  opacity: 0.2;
+  z-index: 1;
+  }
+  .cover__overlay:hover:before{
+  opacity: 0.8;
+  }

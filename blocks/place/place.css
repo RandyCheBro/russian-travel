@@ -4,6 +4,7 @@
   grid-template-rows: auto auto;
   gap: 48px 40px;
   margin: 80px 0 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 1050px) {
@@ -17,11 +18,11 @@
   .place {
     grid-template-columns: 340px auto;
     gap: 48px 28px;
-    margin: 73px 0 0;
+    margin-top: 73px;
   }
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 630px) {
   .place {
     gap: 48px 0px;
   }
@@ -32,9 +33,9 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin: 50px 0 0;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
   }
 }
+
