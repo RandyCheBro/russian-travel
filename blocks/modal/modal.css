@@ -1,0 +1,13 @@
+.modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 85px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+.modal__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  margin: 0 0 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .modal__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}

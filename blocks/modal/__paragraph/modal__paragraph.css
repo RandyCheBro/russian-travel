@@ -1,0 +1,14 @@
+.modal__paragraph {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .modal__paragraph {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

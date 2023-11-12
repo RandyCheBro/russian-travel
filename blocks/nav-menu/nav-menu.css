@@ -1,0 +1,11 @@
+.nav-menu {
+  list-style: none;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-style: normal;
+  margin-top: 18px;
+  margin: 18px 50px 0 auto;
+}

@@ -1,0 +1,17 @@
+.modal__close {
+  background-image: url(../../../sprint-3-images/closeIcon.svg);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 32px;
+  height: 32px;
+  right: 50px;
+  top: 28px;
+}
+
+@media screen and (max-width: 600px) {
+  .modal__close {
+    right: 5px;
+    top: 5px;
+  }
+}

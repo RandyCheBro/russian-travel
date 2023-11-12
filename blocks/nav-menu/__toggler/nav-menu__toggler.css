@@ -1,0 +1,16 @@
+.nav-menu__toggler {
+  background: none;
+  border: none;
+  color: #ffffff;
+  line-height: 28px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+
+.nav-menu__toggler:active {
+  text-decoration: underline;
+}
+
+.nav-menu__toggler:hover {
+  opacity: 0.7;
+}
